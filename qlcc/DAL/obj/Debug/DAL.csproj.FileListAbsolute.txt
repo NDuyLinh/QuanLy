@@ -33,3 +33,14 @@ C:\Users\duy linh\source\repos\QuanLyChamCong\qlcc\DAL\obj\Debug\DAL.csproj.Core
 C:\Users\duy linh\source\repos\QuanLyChamCong\qlcc\DAL\obj\Debug\DAL.csproj.CopyComplete
 C:\Users\duy linh\source\repos\QuanLyChamCong\qlcc\DAL\obj\Debug\DAL.dll
 C:\Users\duy linh\source\repos\QuanLyChamCong\qlcc\DAL\obj\Debug\DAL.pdb
+C:\GITHUB\QuanLy\qlcc\DAL\bin\Debug\DAL.dll
+C:\GITHUB\QuanLy\qlcc\DAL\bin\Debug\DAL.pdb
+C:\GITHUB\QuanLy\qlcc\DAL\bin\Debug\ValueObject.dll
+C:\GITHUB\QuanLy\qlcc\DAL\bin\Debug\Google.Protobuf.dll
+C:\GITHUB\QuanLy\qlcc\DAL\bin\Debug\ValueObject.pdb
+C:\GITHUB\QuanLy\qlcc\DAL\bin\Debug\MySql.Data.xml
+C:\GITHUB\QuanLy\qlcc\DAL\obj\Debug\DAL.csprojAssemblyReference.cache
+C:\GITHUB\QuanLy\qlcc\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\GITHUB\QuanLy\qlcc\DAL\obj\Debug\DAL.csproj.CopyComplete
+C:\GITHUB\QuanLy\qlcc\DAL\obj\Debug\DAL.dll
+C:\GITHUB\QuanLy\qlcc\DAL\obj\Debug\DAL.pdb
