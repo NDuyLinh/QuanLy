@@ -149,42 +149,49 @@ namespace QuanLyChamCong
 
         private void btn_Luu_Click(object sender, EventArgs e)
         {
-            obj.MaNhanVien = txtMaNV.Text;
-
-            obj.DiaChi = txtaddress.Text;
-            obj.Email = txtEmail.Text;
-            if (radio_Nam.Checked)
+            try
             {
-                obj.GioiTinh = "Nam";
+                obj.MaNhanVien = txtMaNV.Text;
+
+                obj.DiaChi = txtaddress.Text;
+                obj.Email = txtEmail.Text;
+                if (radio_Nam.Checked)
+                {
+                    obj.GioiTinh = "Nam";
+                }
+                else
+                {
+                    obj.GioiTinh = "Nữ";
+                }
+
+                obj.MaPB = cbbPB.SelectedValue.ToString();
+                obj.MaCV = cbbCV.SelectedValue.ToString();
+                obj.TenNV = txtTenNV.Text;
+                obj.HeSoLuong = cbbHSL.SelectedValue.ToString();
+                obj.NgaySinh = dateNS.Value.Date.ToString("yyyy/MM/dd");
+                obj.NgayVaoLam = dateNVL.Value.Date.ToString("yyyy/MM/dd");
+                obj.SoCM = txtSCMND.Text;
+                obj.DienThoai = txtSDT.Text;
+                if (IsInsert == true)
+                {
+                    bus.Insert(obj);
+                    XtraMessageBox.Show("Thêm thông tin thành công");
+                    hienthi();
+                    XoaText();
+                    KhoaDieuKhien();
+
+                }
+
+                else
+                {
+                    bus.Update(obj);
+                    XtraMessageBox.Show("Sửa thông tin thành công");
+                    hienthi();
+                }
             }
-            else
+            catch
             {
-                obj.GioiTinh = "Nữ";
-            }
-
-            obj.MaPB = cbbPB.SelectedValue.ToString();
-            obj.MaCV = cbbCV.SelectedValue.ToString();
-            obj.TenNV = txtTenNV.Text;
-            obj.HeSoLuong = cbbHSL.SelectedValue.ToString();
-            obj.NgaySinh = dateNS.Value.Date.ToString("yyyy/MM/dd");
-            obj.NgayVaoLam = dateNVL.Value.Date.ToString("yyyy/MM/dd");
-            obj.SoCM = txtSCMND.Text;
-            obj.DienThoai = txtSDT.Text;
-            if (IsInsert == true)
-            {
-                bus.Insert(obj);
-                XtraMessageBox.Show("Thêm thông tin thành công");
-                hienthi();
-                XoaText();
-                KhoaDieuKhien();
-
-            }
-
-            else
-            {
-                bus.Update(obj);
-                XtraMessageBox.Show("Sửa thông tin thành công");
-                hienthi();
+                MessageBox.Show("không được nhập trùng");
             }
 
         }

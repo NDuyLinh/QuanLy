@@ -53,6 +53,7 @@
     <Compile Include="PhongBanDAL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="DangNhapDAL.cs" />
+    <Compile Include="TongLuongDAL.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ValueObject\ValueObject.csproj">

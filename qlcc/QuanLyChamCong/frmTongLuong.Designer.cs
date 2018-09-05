@@ -30,13 +30,11 @@
         {
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.MaNV = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TenNV = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SoCM = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PhongBan = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TenPB = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SoCM = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SoNgayLam = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.LuongCoBan = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TongLuong = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -49,74 +47,57 @@
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.MaNV,
             this.TenNV,
-            this.SoCM,
+            this.PhongBan,
             this.TenPB,
+            this.SoCM,
             this.SoNgayLam,
             this.LuongCoBan,
             this.TongLuong});
-            this.dataGridView1.Location = new System.Drawing.Point(1, 169);
+            this.dataGridView1.Location = new System.Drawing.Point(0, 147);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(743, 253);
+            this.dataGridView1.Size = new System.Drawing.Size(845, 253);
             this.dataGridView1.TabIndex = 0;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Times New Roman", 10F);
-            this.label1.Location = new System.Drawing.Point(57, 44);
+            this.label1.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(334, 76);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(92, 16);
+            this.label1.Size = new System.Drawing.Size(131, 27);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Tên Nhân Viên";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Times New Roman", 10F);
-            this.label2.Location = new System.Drawing.Point(57, 91);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(59, 16);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Chức Vụ";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(197, 46);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(35, 13);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "label3";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(200, 93);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(35, 13);
-            this.label4.TabIndex = 4;
-            this.label4.Text = "label4";
+            this.label1.Text = "Tổng Lương";
             // 
             // MaNV
             // 
-            this.MaNV.DataPropertyName = "MaNV";
+            this.MaNV.DataPropertyName = "MaNhanVien";
             this.MaNV.HeaderText = "Mã Nhân Viên";
             this.MaNV.Name = "MaNV";
             // 
             // TenNV
             // 
+            this.TenNV.DataPropertyName = "TenNV";
             this.TenNV.HeaderText = "Tên Nhân Viên";
             this.TenNV.Name = "TenNV";
             // 
-            // SoCM
+            // PhongBan
             // 
-            this.SoCM.HeaderText = "Số CMND";
-            this.SoCM.Name = "SoCM";
+            this.PhongBan.DataPropertyName = "TenPB";
+            this.PhongBan.HeaderText = "Phòng Ban";
+            this.PhongBan.Name = "PhongBan";
             // 
             // TenPB
             // 
-            this.TenPB.HeaderText = "Phòng Ban";
+            this.TenPB.DataPropertyName = "TenCV";
+            this.TenPB.HeaderText = "Chức Vụ";
             this.TenPB.Name = "TenPB";
+            // 
+            // SoCM
+            // 
+            this.SoCM.DataPropertyName = "SoCM";
+            this.SoCM.HeaderText = "Số CMND";
+            this.SoCM.Name = "SoCM";
             // 
             // SoNgayLam
             // 
@@ -125,6 +106,7 @@
             // 
             // LuongCoBan
             // 
+            this.LuongCoBan.DataPropertyName = "LuongCB";
             this.LuongCoBan.HeaderText = "Lương cơ bản";
             this.LuongCoBan.Name = "LuongCoBan";
             // 
@@ -137,14 +119,12 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(741, 423);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
+            this.ClientSize = new System.Drawing.Size(844, 401);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dataGridView1);
             this.Name = "frmTongLuong";
             this.Text = "frmTongLuong";
+            this.Load += new System.EventHandler(this.frmTongLuong_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -155,15 +135,13 @@
 
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.DataGridViewTextBoxColumn MaNV;
         private System.Windows.Forms.DataGridViewTextBoxColumn TenNV;
-        private System.Windows.Forms.DataGridViewTextBoxColumn SoCM;
+        private System.Windows.Forms.DataGridViewTextBoxColumn PhongBan;
         private System.Windows.Forms.DataGridViewTextBoxColumn TenPB;
+        private System.Windows.Forms.DataGridViewTextBoxColumn SoCM;
         private System.Windows.Forms.DataGridViewTextBoxColumn SoNgayLam;
         private System.Windows.Forms.DataGridViewTextBoxColumn LuongCoBan;
         private System.Windows.Forms.DataGridViewTextBoxColumn TongLuong;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
     }
 }
