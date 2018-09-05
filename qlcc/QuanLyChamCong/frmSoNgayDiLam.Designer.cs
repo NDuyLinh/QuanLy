@@ -32,10 +32,10 @@
             this.label2 = new System.Windows.Forms.Label();
             this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
             this.label1 = new System.Windows.Forms.Label();
+            this.comboBox1 = new System.Windows.Forms.ComboBox();
             this.MaNV = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TenNV = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Ngay = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.data)).BeginInit();
             this.SuspendLayout();
             // 
@@ -70,6 +70,7 @@
             this.simpleButton1.Size = new System.Drawing.Size(218, 29);
             this.simpleButton1.TabIndex = 17;
             this.simpleButton1.Text = "Xem";
+            this.simpleButton1.Click += new System.EventHandler(this.simpleButton1_Click);
             // 
             // label1
             // 
@@ -80,6 +81,17 @@
             this.label1.Size = new System.Drawing.Size(213, 32);
             this.label1.TabIndex = 13;
             this.label1.Text = "Số Ngày Đi Làm";
+            // 
+            // comboBox1
+            // 
+            this.comboBox1.Font = new System.Drawing.Font("Arial", 10F);
+            this.comboBox1.FormattingEnabled = true;
+            this.comboBox1.Location = new System.Drawing.Point(200, 138);
+            this.comboBox1.Name = "comboBox1";
+            this.comboBox1.Size = new System.Drawing.Size(218, 24);
+            this.comboBox1.TabIndex = 20;
+            this.comboBox1.DropDown += new System.EventHandler(this.comboBox1_DropDown);
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // MaNV
             // 
@@ -98,19 +110,9 @@
             // Ngay
             // 
             this.Ngay.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.Ngay.DataPropertyName = "Ngay";
+            this.Ngay.DataPropertyName = "COUNT(Ngay)";
             this.Ngay.HeaderText = "Số Ngày Làm";
             this.Ngay.Name = "Ngay";
-            // 
-            // comboBox1
-            // 
-            this.comboBox1.Font = new System.Drawing.Font("Arial", 10F);
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(200, 138);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(218, 24);
-            this.comboBox1.TabIndex = 20;
-            this.comboBox1.DropDown += new System.EventHandler(this.comboBox1_DropDown);
             // 
             // frmSoNgayDiLam
             // 
@@ -136,9 +138,9 @@
         private System.Windows.Forms.Label label2;
         private DevExpress.XtraEditors.SimpleButton simpleButton1;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ComboBox comboBox1;
         private System.Windows.Forms.DataGridViewTextBoxColumn MaNV;
         private System.Windows.Forms.DataGridViewTextBoxColumn TenNV;
         private System.Windows.Forms.DataGridViewTextBoxColumn Ngay;
-        private System.Windows.Forms.ComboBox comboBox1;
     }
 }

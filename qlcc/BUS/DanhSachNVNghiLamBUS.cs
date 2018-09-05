@@ -30,5 +30,10 @@ namespace BUS
         {
             return dal.SelectNVNghiTheoThang(month);
         }
+
+        public DataTable SelectSoNgayDiLam(string month1)
+        {
+            return dal.GetDaTaSoNgayDiLam(month1);
+        }
     }
 }

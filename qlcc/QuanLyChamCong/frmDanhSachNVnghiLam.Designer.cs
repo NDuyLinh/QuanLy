@@ -36,7 +36,6 @@
             this.MaNV = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TenNV = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Ngay = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TinhTrang = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.data)).BeginInit();
             this.SuspendLayout();
             // 
@@ -89,8 +88,7 @@
             this.data.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.MaNV,
             this.TenNV,
-            this.Ngay,
-            this.TinhTrang});
+            this.Ngay});
             this.data.Location = new System.Drawing.Point(-1, 189);
             this.data.Name = "data";
             this.data.Size = new System.Drawing.Size(824, 190);
@@ -116,13 +114,6 @@
             this.Ngay.DataPropertyName = "Ngay";
             this.Ngay.HeaderText = "Ngày ";
             this.Ngay.Name = "Ngay";
-            // 
-            // TinhTrang
-            // 
-            this.TinhTrang.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.TinhTrang.DataPropertyName = "TinhTrang";
-            this.TinhTrang.HeaderText = "Tình Trạng";
-            this.TinhTrang.Name = "TinhTrang";
             // 
             // frmDanhSachNVnghiLam
             // 
@@ -153,6 +144,5 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn MaNV;
         private System.Windows.Forms.DataGridViewTextBoxColumn TenNV;
         private System.Windows.Forms.DataGridViewTextBoxColumn Ngay;
-        private System.Windows.Forms.DataGridViewTextBoxColumn TinhTrang;
     }
 }

@@ -8,6 +8,8 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using DevExpress.XtraEditors;
+using BUS;
+using ValueObject;
 
 namespace QuanLyChamCong
 {
@@ -18,6 +20,8 @@ namespace QuanLyChamCong
             InitializeComponent();
         }
 
+        DanhSachNVNghiLamBUS bus = new DanhSachNVNghiLamBUS();
+        
         private void comboBox1_DropDown(object sender, EventArgs e)
         {
             comboBox1.DisplayMember = "Text";
@@ -39,6 +43,18 @@ namespace QuanLyChamCong
                 new { Text = "tháng 12", Value = "12" }
             };
             comboBox1.DataSource = items;
+        }
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void simpleButton1_Click(object sender, EventArgs e)
+        {
+            string aaa = comboBox1.SelectedValue.ToString();
+            bus.SelectSoNgayDiLam(aaa);
+            data.DataSource = bus.SelectSoNgayDiLam(aaa);
         }
     }
 }
