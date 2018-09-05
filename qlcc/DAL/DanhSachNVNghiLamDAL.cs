@@ -38,5 +38,10 @@ namespace DAL
         //    }
         //    return db.GetData("DanhSachNhanVienNghiLamCoPhep_By_ID",para);
         //}
+
+        public DataTable SelectNVNghiTheoThang(String month)
+        {
+            return db.GetData("SELECT nhanvien.MaNhanVien, nhanvien.TenNV, chamcong.Ngay FROM chamcong INNER JOIN nhanvien ON chamcong.MaNhanVien = nhanvien.MaNhanVien WHERE MONTH(Ngay) = '"+month+"' AND YEAR(Ngay) = YEAR(NOW())");
+        }
     }
 }

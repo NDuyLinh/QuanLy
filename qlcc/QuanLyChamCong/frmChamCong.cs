@@ -25,11 +25,19 @@ namespace QuanLyChamCong
         ChamCong obj = new ChamCong();
         private bool IsInsert = false;
 
+        public void SetMyCustomFormat()
+        {
+            // Set the Format type and the CustomFormat string.
+            date.Format = DateTimePickerFormat.Custom;
+            date.CustomFormat = "dd/MM/yyyy";
+            date.ShowUpDown = true;
+        }
+
         private void frmChamCong_Load(object sender, EventArgs e)
         {
             data.DataSource = bus.Getdata();
             Column3.DataSource = new string[] { "Đi Làm", "Nghỉ Làm Có Phép", "Nghỉ Làm Không Phép" };
-
+            SetMyCustomFormat();
         }
 
         private void btn_update_Click(object sender, EventArgs e)
@@ -49,7 +57,6 @@ namespace QuanLyChamCong
                     obj.Ngay = date.Value.Date.ToString("yyyy/MM/dd");
                     bus.Insert(obj);
                     i++;
-
                 }
 
             }

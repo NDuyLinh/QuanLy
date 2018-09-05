@@ -25,5 +25,10 @@ namespace BUS
         {
             return dal.SelectDataNVNghiCoPhepByID(obj);
         }
+
+        public DataTable SelectNVNghiTheoMonth(string month)
+        {
+            return dal.SelectNVNghiTheoThang(month);
+        }
     }
 }
