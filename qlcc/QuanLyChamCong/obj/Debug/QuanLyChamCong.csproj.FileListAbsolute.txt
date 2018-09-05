@@ -419,3 +419,4 @@ C:\GITHUB\QuanLy\qlcc\QuanLyChamCong\obj\Debug\QuanLyChamCong.csproj.CoreCompile
 C:\GITHUB\QuanLy\qlcc\QuanLyChamCong\obj\Debug\QuanLyChamCong.csproj.CopyComplete
 C:\GITHUB\QuanLy\qlcc\QuanLyChamCong\obj\Debug\QuanLyChamCong.exe
 C:\GITHUB\QuanLy\qlcc\QuanLyChamCong\obj\Debug\QuanLyChamCong.pdb
+C:\GITHUB\QuanLy\qlcc\QuanLyChamCong\obj\Debug\QuanLyChamCong.frmDanhSachNVNghiLamCoPhep.resources

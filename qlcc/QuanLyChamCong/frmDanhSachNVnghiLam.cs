@@ -19,7 +19,7 @@ namespace QuanLyChamCong
             InitializeComponent();
         }
 
-        DanhSachNhanVienBUS bus = new DanhSachNhanVienBUS();
+        DanhSachNVNghiLamBUS bus = new DanhSachNVNghiLamBUS();
 
         private void frmDanhSachNVnghiLam_Load(object sender, EventArgs e)
         {
