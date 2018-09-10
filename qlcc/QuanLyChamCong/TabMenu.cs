@@ -56,6 +56,14 @@ namespace QuanLyChamCong
             cc.FormBorderStyle = FormBorderStyle.None;
             cc.Dock = DockStyle.Fill;
             xtraTabControl1.TabPages[4].Controls.Add(cc);
+
+            //TongLuong
+            frmTongLuong tl = new frmTongLuong();
+            tl.TopLevel = false;
+            tl.Visible = true;
+            tl.FormBorderStyle = FormBorderStyle.None;
+            tl.Dock = DockStyle.Fill;
+            xtraTabControl1.TabPages[5].Controls.Add(tl);
         }
 
        
@@ -79,6 +87,11 @@ namespace QuanLyChamCong
         }
 
         private void TabMenu_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void xtraTabControl1_Click(object sender, EventArgs e)
         {
 
         }

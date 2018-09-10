@@ -55,7 +55,7 @@
             this.TongLuong});
             this.dataGridView1.Location = new System.Drawing.Point(0, 147);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(845, 253);
+            this.dataGridView1.Size = new System.Drawing.Size(967, 253);
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -63,7 +63,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Times New Roman", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(334, 76);
+            this.label1.Location = new System.Drawing.Point(435, 79);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(131, 27);
             this.label1.TabIndex = 1;
@@ -71,47 +71,55 @@
             // 
             // MaNV
             // 
+            this.MaNV.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.MaNV.DataPropertyName = "MaNhanVien";
             this.MaNV.HeaderText = "Mã Nhân Viên";
             this.MaNV.Name = "MaNV";
             // 
             // TenNV
             // 
+            this.TenNV.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.TenNV.DataPropertyName = "TenNV";
             this.TenNV.HeaderText = "Tên Nhân Viên";
             this.TenNV.Name = "TenNV";
             // 
             // PhongBan
             // 
+            this.PhongBan.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.PhongBan.DataPropertyName = "TenPB";
             this.PhongBan.HeaderText = "Phòng Ban";
             this.PhongBan.Name = "PhongBan";
             // 
             // TenPB
             // 
+            this.TenPB.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.TenPB.DataPropertyName = "TenCV";
             this.TenPB.HeaderText = "Chức Vụ";
             this.TenPB.Name = "TenPB";
             // 
             // SoCM
             // 
+            this.SoCM.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.SoCM.DataPropertyName = "SoCM";
             this.SoCM.HeaderText = "Số CMND";
             this.SoCM.Name = "SoCM";
             // 
             // SoNgayLam
             // 
+            this.SoNgayLam.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.SoNgayLam.HeaderText = "Số Ngày Làm";
             this.SoNgayLam.Name = "SoNgayLam";
             // 
             // LuongCoBan
             // 
+            this.LuongCoBan.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.LuongCoBan.DataPropertyName = "LuongCB";
             this.LuongCoBan.HeaderText = "Lương cơ bản";
             this.LuongCoBan.Name = "LuongCoBan";
             // 
             // TongLuong
             // 
+            this.TongLuong.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.TongLuong.HeaderText = "Tổng Lương";
             this.TongLuong.Name = "TongLuong";
             // 
@@ -119,7 +127,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(844, 401);
+            this.ClientSize = new System.Drawing.Size(965, 400);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dataGridView1);
             this.Name = "frmTongLuong";

@@ -22,6 +22,7 @@ namespace QuanLyChamCong
 
         private void frmTongLuong_Load(object sender, EventArgs e)
         {
+            
             dataGridView1.DataSource = bus.GetData();
             for (int i = 0; i < dataGridView1.Rows.Count-1; i++)
             {
@@ -40,5 +41,6 @@ namespace QuanLyChamCong
         {
 
         }
+
     }
 }

@@ -17,7 +17,7 @@ namespace QuanLyChamCong
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             //Application.Run(new frmNhanVien());
-            Application.Run(new frmNhanVien());
+            Application.Run(new TabMenu());
             //Application.Run(new frmdangnhap());
             
         }
