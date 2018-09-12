@@ -123,6 +123,12 @@
     <Compile Include="TabMenu.Designer.cs">
       <DependentUpon>TabMenu.cs</DependentUpon>
     </Compile>
+    <Compile Include="XemThongTin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XemThongTin.Designer.cs">
+      <DependentUpon>XemThongTin.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="frmChamCong.resx">
       <DependentUpon>frmChamCong.cs</DependentUpon>
     </EmbeddedResource>
@@ -165,6 +171,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="TabMenu.resx">
       <DependentUpon>TabMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XemThongTin.resx">
+      <DependentUpon>XemThongTin.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

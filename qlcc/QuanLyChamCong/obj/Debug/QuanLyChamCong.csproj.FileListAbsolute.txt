@@ -421,3 +421,4 @@ C:\GITHUB\QuanLy\qlcc\QuanLyChamCong\obj\Debug\QuanLyChamCong.exe
 C:\GITHUB\QuanLy\qlcc\QuanLyChamCong\obj\Debug\QuanLyChamCong.pdb
 C:\GITHUB\QuanLy\qlcc\QuanLyChamCong\obj\Debug\QuanLyChamCong.frmDanhSachNVNghiLamCoPhep.resources
 C:\GITHUB\QuanLy\qlcc\QuanLyChamCong\obj\Debug\QuanLyChamCong.frmSoNgayDiLam.resources
+C:\GITHUB\QuanLy\qlcc\QuanLyChamCong\obj\Debug\QuanLyChamCong.XemThongTin.resources
