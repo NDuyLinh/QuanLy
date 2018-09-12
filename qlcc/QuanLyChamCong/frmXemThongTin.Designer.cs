@@ -1,6 +1,6 @@
 ﻿namespace QuanLyChamCong
 {
-    partial class XemThongTin
+    partial class frmXemThongTin
     {
         /// <summary>
         /// Required designer variable.

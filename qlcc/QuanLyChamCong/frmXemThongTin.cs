@@ -12,9 +12,9 @@ using BUS;
 
 namespace QuanLyChamCong
 {
-    public partial class XemThongTin : DevExpress.XtraEditors.XtraForm
+    public partial class frmXemThongTin : DevExpress.XtraEditors.XtraForm
     {
-        public XemThongTin()
+        public frmXemThongTin()
         {
             InitializeComponent();
         }
