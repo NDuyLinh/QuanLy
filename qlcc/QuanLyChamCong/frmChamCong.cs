@@ -23,7 +23,7 @@ namespace QuanLyChamCong
 
         ChamCongBUS bus = new ChamCongBUS();
         ChamCong obj = new ChamCong();
-        private bool IsInsert = false;
+       
 
         public void SetMyCustomFormat()
         {

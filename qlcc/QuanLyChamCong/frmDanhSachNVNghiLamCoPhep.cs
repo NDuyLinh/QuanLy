@@ -45,17 +45,15 @@ namespace QuanLyChamCong
                 //bus.SelectDataNVNghiCoPhep(obj.Ngay);
                 //MessageBox.Show(obj.Ngay = date.Value.Date.ToString("yyyy/MM/dd"));
                 obj.Ngay = date1;
-                try
-                {
-                    bus.SelectDataNVNghiCoPhep(obj);
-                    data.DataSource = bus.SelectDataNVNghiCoPhep(obj);
-                    //data.Rows[0].Cells[2].Value = date.Value.ToString();
-                }
-                catch
-                {
+            try
+            {
+                bus.SelectDataNVNghiCoPhep(obj);
+                data.DataSource = bus.SelectDataNVNghiCoPhep(obj);
+            }
+            catch
+            {
 
-                }
-         
+            }
         }
 
         private void simpleButton2_Click(object sender, EventArgs e)
@@ -91,9 +89,10 @@ namespace QuanLyChamCong
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-             string aaa = comboBox1.SelectedValue.ToString();
-             bus.SelectNVNghiTheoMonth(aaa);
-             data.DataSource = bus.SelectNVNghiTheoMonth(aaa);
+            string aaa = comboBox1.SelectedValue.ToString();
+            bus.SelectNVNghiTheoMonth(aaa);
+            data.DataSource = bus.SelectNVNghiTheoMonth(aaa);
+
 
         }
     }

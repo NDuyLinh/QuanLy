@@ -46,7 +46,7 @@ namespace DAL
 
         public DataTable SelectNVNghiTheoThang(String month)
         {
-            return db.GetData("SELECT nhanvien.MaNhanVien, nhanvien.TenNV, chamcong.Ngay FROM chamcong INNER JOIN nhanvien ON chamcong.MaNhanVien = nhanvien.MaNhanVien WHERE MONTH(Ngay) = '"+month+"' AND YEAR(Ngay) = YEAR(NOW())");
+            return db.GetData("SELECT nhanvien.MaNhanVien, nhanvien.TenNV, chamcong.Ngay FROM chamcong INNER JOIN nhanvien ON chamcong.MaNhanVien = nhanvien.MaNhanVien WHERE MONTH(Ngay) = '"+month+ "' AND YEAR(Ngay) = YEAR(NOW()) AND chamcong.TinhTrang = 'Nghỉ Làm Có Phép'");
         }
 
         public DataTable GetDaTaSoNgayDiLam(string month1)
